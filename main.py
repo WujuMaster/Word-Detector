@@ -1,19 +1,20 @@
-from PIL import ImageTk, Image, ImageOps
+from PIL import ImageTk, ImageOps
+import PIL.Image
 from tkinter import *
 from tkinter import filedialog
 from utils import detectWords
 
 def openfn():
-    filename = filedialog.askopenfilename(title='open', initialdir='./data')
+    filename = filedialog.askopenfilename(title='open')
     return filename
     
 def open_img():
     x = openfn()
-    img = Image.open(x)
+    img = PIL.Image.open(x)
     img = ImageOps.grayscale(img)
     w, h = img.size
-    img = Image.fromarray(detectWords(img))
-    img = img.resize((500, round(500*h/w)), Image.ANTIALIAS)
+    img = PIL.Image.fromarray(detectWords(img))
+    img = img.resize((500, round(500*h/w)), PIL.Image.ANTIALIAS)
     img = ImageTk.PhotoImage(img)
     panel.configure(image=img)
     panel.image = img
