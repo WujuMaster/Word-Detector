@@ -1,4 +1,4 @@
-# Word Detector with opencv-python
+# IMP Final Project: Word Detector with opencv-python
 
 simple tkinter gui app to detect words by image processing
 
