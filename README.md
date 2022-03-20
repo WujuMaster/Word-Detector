@@ -1,6 +1,10 @@
 # IMP Final Project: Word Detector with opencv-python
+A simple tkinter-gui app to detect words by image processing
 
-simple tkinter gui app to detect words by image processing
+Group members: 
+[Nguyen Xuan Nham](https://github.com/nhamnx)
+[Vo Phuc Huy](https://github.com/PhucHuyVoo)
+[Le Son Bach](https://github.com/WujuMaster)
 
 ## Usage
 ### Main Dependencies
